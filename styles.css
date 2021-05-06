@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+.imgtop{
+    position: relative;
+    top: -33rem;
+    left: -15rem;
+}
+.imgbtm{
+    position: relative;
+    top: -55rem;
+    right: -40rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -47rem;
+}
+.mainbox{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 6.5rem 1.3rem 5.5rem 1.3rem 6.5rem;
+    grid-template-rows: 4.7rem  6rem 4rem 6rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0 20px 50px -39px;
+    z-index: 1;
+}
+.cardbg{
+    grid-column: 1/6;
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.profilepic{
+    border-radius: 100%;
+    grid-column: 3/4;
+    width: 100%;
+    margin-top: 0.6rem ;
+    border: 0.25rem solid;
+    border-color: white;
+}
+.nameandage{
+    grid-row: 3/4;
+    grid-column: 2/5;
+    padding-top: 1.3rem;
+    color:  hsl(227, 10%, 46%);
+    font-size: 13px;
+}
+.outside{
+    display: block;
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+}
+.name{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%); 
+}
+hr{
+    grid-row: 4/5;
+    grid-column: 1/6;
+    height: 0.01px;
+    color: hsl(0, 0%, 59%);
+    border: 0.5px solid;
+    border-bottom: 0;
+    border-color: hsl(0, 0%, 59%);
+    margin-top: 1.5rem;
+    opacity: 50%;
+}
+.stats{
+    display: flex;
+    /* gap: 3rem; */
+    justify-content: space-around;
+    padding: 3rem 2rem 0rem;
+    font-weight: 400;
+    color:  hsl(227, 10%, 46%);
+    grid-row: 4/5;
+    grid-column: 1/6;
+    font-size: 10px;
+}
+.statsnum{
+    display: block;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    padding-bottom: 0.3rem;
+    font-size: 18px;
+}
+
+
+@media (max-width:450px){
+    body{
+        
+    }
+    .imgtop{
+        top: -30rem;
+        left: -45rem;
+    }
+    .imgbtm{
+        right: -10rem;
+        top: -65rem;
+    }
+}
